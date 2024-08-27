@@ -11,8 +11,9 @@
   --1F1E17: #1f1e17;
   --878680: #878680;
   --E4E2D7: #e4e2d7;
-  --4baf47cc: #4baf47cc;
-  --4BAF47: #4baf47;
+  --1c8a43cc: #1c8a43cc;
+  --1c8a43: #1c8a43;
+  --68b04d: #68b04d;
 
   /* icons social media */
   --twitter: url('./assets/icons/twitter.svg');
@@ -256,7 +257,7 @@ img {
 }
 
 .hero h1 span {
-  color: var(--4BAF47);
+  color: var(--68b04d);
 }
 
 .hero-button {
@@ -265,19 +266,19 @@ img {
   align-items: center;
 }
 
-.hero a {
+.hero-button a {
   padding: 0.875rem 3.125rem;
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.875rem;
   font-weight: 700;
   border-radius: 0.625rem;
-  background: var(--4BAF47);
+  background: var(--1c8a43);
   max-width: 196px;
 }
 
-.hero a:hover {
-  background: var(--4baf47cc);
+.hero-button a:hover {
+  background: var(--1c8a43cc);
 }
 
 /* PRODUCTS BOXES */
@@ -287,10 +288,14 @@ img {
 
 .product-list {
   position: absolute;
-  top: -3.75rem;
-  display: flex;
+  right: 0;
+  left: 0;
+  margin: 0 0.75rem;
+  top: -7rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .product-container .product-list > li a {
@@ -300,6 +305,7 @@ img {
   border-radius: 0.625rem;
   font-family: var(--font-covered);
   font-weight: 400;
+  width: 100%;
 }
 
 .product-container ul li a div {
@@ -309,11 +315,12 @@ img {
 
 .product-container ul li a div img {
   border-radius: 0.625rem;
+  width: 100%;
 }
 
 .product-container ul li a h1 {
-  color: #4baf47;
-  font-size: 1.375rem;
+  color: #1c8a43;
+  font-size: 1.75rem;
   margin-bottom: 10px;
 }
 
@@ -329,10 +336,85 @@ img {
   align-items: center;
   color: #fff;
   flex-direction: column;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   border-radius: 0.625rem;
 }
 
 .product-container .product-list > li:hover .product-overlay {
   opacity: 1;
+}
+
+/* INTRODUCTION */
+.introduction {
+  padding-top: 264px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.introduction-image {
+  position: relative;
+}
+
+.introduction-image .big-image {
+  width: 550px;
+  height: 550px;
+  background: url('./assets/Fachada.webp') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.small-image {
+  background: url('./assets/equipe.png') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  z-index: 999;
+  border: 10px solid #fff;
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+}
+
+.introduction-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction-info span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--1c8a43);
+  font-family: var(--font-covered);
+}
+
+.introduction-info h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.6rem;
+  color: var(--1F1E17);
+  font-family: var(--font-manrope);
+  margin-bottom: 32px;
+}
+
+.introduction-info h2 {
+  font-size: 1.625rem;
+  font-weight: 800;
+  line-height: 1.875rem;
+  color: var(--1c8a43);
+  font-family: var(--font-manrope);
+  margin-bottom: 32px;
+}
+
+.introduction-info p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  color: var(--878680);
+  font-family: var(--font-manrope);
+  margin-bottom: 40px;
 }
