@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header-top container">
             <div class="logo-container">
-                <img src="./assets/logo.svg" alt="Logo">
+                <img src="./assets/logo_massoli.webp" alt="Logo Massoli">
             </div>
             <div>
                 <nav class="nav-header">
@@ -24,7 +24,6 @@
                     </ul>
                     <ul class="nav-contact">
                         <li>
-
                             <img src="./assets/icons/phone.svg" alt="Call Us">
                             <div>
                                 <p>Suporte 24hrs</p>
@@ -35,13 +34,13 @@
                             <img src="./assets/icons/mail.svg" alt="Mail Us">
                             <div>
                                 <p>Envie um email</p>
-                                <a href="#">contato@agrios.com</a>
+                                <a href="#">contato@massoli.com</a>
                             </div>
                         </li>
                         <li>
                             <img src="./assets/icons/map-pin.svg" alt="Find Us">
                             <div>
-                                <p>Rua Ali Perto, 387</p>
+                                <p>Rua Ali, 387</p>
                                 <a href="#">Brasília, Brasil</a>
                             </div>
                         </li>
@@ -51,13 +50,12 @@
         </div>
         <div class="header-bottom">
             <nav>
-                <ul>
+                <ul class="js-menu">
                     <li><a class="active" href="#">Início</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Novidades</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -75,7 +73,7 @@
                 </div>
             </div>
         </section>
-        <section class="introduction container">
+        <section id="sobre" class="introduction container">
             <div class="introduction-image">
                 <div class="big-image"></div>
                 <div class="small-image"></div>
@@ -90,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="services-section">
+        <section id="servicos" class="services-section">
             <div class="services-content container">
                 <span class="section-span">Nossos Serviços</span>
                 <h1 class="section-title">O que temos a oferecer?</h1>
@@ -153,7 +151,7 @@
                 </ul>
             </div>
         </section>
-        <section class="partners">
+        <section id="parceiros" class="partners">
             <div class="container">
                 <span class="section-span">Nossos Parceiros</span>
                 <h1 class="section-title">Marcas Parceiras</h1>
@@ -216,6 +214,80 @@
                 </div>
             </div>
         </section>
+        <section id="contato" class="contact-section inner-header parallax" data-bg-image="./assets/maquinario-bg.png" data-background-ratio="0.5" data-position-initial="1200">
+            <div class="container">
+                <span class="section-span">Entre em contato</span>
+                <h1 class="section-title">Converse Conosco Agora</h1>
+                <div class="form">
+                    <form action="">
+                        <div>
+                            <label for="name">Nome *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="telephone">Telefone *</label>
+                            <input type="text" id="telephone" name="telephone" required>
+                        </div>
+                        <div>
+                            <label for="subject">Assunto *</label>
+                            <input type="subject" id="subject" name="subject" required>
+                        </div>
+                        <div>
+                            <label for="message">Mensagem *</label>
+                            <textarea name="message" id="message" required rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.092769180803!2d-50.162917071497894!3d-13.273769299188489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x936a9bc713428795%3A0xa465fceeea0371b9!2sMassolli%20Agropecu%C3%A1ria!5e1!3m2!1spt-BR!2sus!4v1724865424499!5m2!1spt-BR!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-grid-1">
+                    <img src="./assets/logo_massoli.png" alt="Massoli Logo">
+                    <p>There are many variations of passages of lorem ipsum available, but the majority suffered.</p>
+                    <ul class="nav-icons">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid-2">
+                    <h1>Explore</h1>
+                    <span class="title-detail"></span>
+                    <ul class="js-menu">
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid-3">
+                    <h1>Contato</h1>
+                    <span class="title-detail"></span>
+                    <ul>
+                        <li><a href="#">99 9 9999-9999</a></li>
+                        <li><a href="#">contato@massoli.com</a></li>
+                        <li><a href="#">Rua Ali Perto, 387, Brasília, Brasil</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="container">
+                    <p>
+                        &copy; Copyright © 2024 by Yuri Souza
+                    </p>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li>|</li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="./slide.js"></script>
